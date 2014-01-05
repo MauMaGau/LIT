@@ -86,6 +86,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $value === 'y';
 	}
 
+	public function setActiveAttribute($value)
+	{
+		$this->attributes['active'] = $value ? 'y' : 'n';
+	}
+
 	public function setPasswordAttribute($value)
 	{
 		// We may be passing an empty string from a form if we don't want to change the password

@@ -15,8 +15,16 @@
 
     <div class="form-group">
         {{ Form::label('password', 'Password:') }}
-        {{ Form::text('password', null, ['class'=>'form-control']) }}
+        {{ Form::text('password', '', ['class'=>'form-control']) }}
     </div>
+
+    <div class="form-group">
+        {{ Form::label('remember', 'Remember Me:') }}
+        {{ Form::checkbox('remember', 'true') }}
+        {{ $errors->first('remember', '<p class="label label-danger">:message</p>') }}
+
+    </div>
+
 
     <div class="form-group">
         {{ Form::submit('Log in', ['class'=>'btn btn-success']) }}

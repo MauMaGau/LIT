@@ -54,7 +54,7 @@ class UsersController extends AdminController {
 		}
 
 		return Redirect::route('admin.users.create')
-			->withInput()
+			->withInput(Input::except('password'))
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
 	}
@@ -110,7 +110,7 @@ class UsersController extends AdminController {
 		}
 
 		return Redirect::route('admin.users.edit', $id)
-			->withInput()
+			->withInput(Input::except('password'))
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
 	}

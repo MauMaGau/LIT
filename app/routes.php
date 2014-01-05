@@ -13,7 +13,8 @@
 
 Route::get('/', ['as'=>'home', 'uses'=>'HomeController@showWelcome']);
 
-Route::get('register', ['as'=>'user.register', 'uses'=>'UsersController@getRegister']);
+Route::get('register', ['as'=>'user.register', 'uses'=>'UserController@getRegister']);
+Route::post('register', ['as'=>'user.register.post', 'uses'=>'UserController@postRegister']);
 
 Route::get('login', ['as'=>'user.login', 'uses'=>'UserController@getLogin']);
 Route::post('login', ['as'=>'user.login.post', 'uses'=>'UserController@postLogin']);

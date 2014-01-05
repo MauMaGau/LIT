@@ -38,6 +38,9 @@ $ git remote add origin your_new_repo
 ### Contributing To LIT
 **Contributions & forks are encouraged. The aim of LIT is to create a sturdy foundation for rapid development, without sacrificing production quality. Any feature that is always (or almost always) used in a web project could be added to LIT.**
 
+### License
+LIT is licensed as DBAD [Don't be a dick](http://www.dbad-license.org/)
+
 ## Laravel PHP Framework
 
 ### Contributing To Laravel
@@ -47,5 +50,3 @@ $ git remote add origin your_new_repo
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
-
-LIT is licensed as DBAD [Don't be a dick](http://www.dbad-license.org/)
