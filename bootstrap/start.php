@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(function ()
 {
-    if(isset($_SERVER['SERVER_NAME']){
+    if(isset($_SERVER['SERVER_NAME'])){
         switch(true){
             case(strpos($_SERVER['SERVER_NAME'], 'mine.') === 0): // eg. mine.my_app.my_site.com
                 return 'mine'; // Development, with database on personal machine
